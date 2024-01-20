@@ -1,13 +1,13 @@
-# Semascope - Text Visualization Tool
+# Semascope 👁️ - Text Visualization Tool
 
-Semascope is a JavaScript-based text visualization tool that utilizes Plotly JS to graphically represent relationships between words in a collection of texts. This tool provides an interactive 3D scatter plot where each point represents a word, and the axes correspond to different properties of the words.
+Semascope 👁️ is a JavaScript-based text visualization tool that utilizes Plotly JS to graphically represent relationships between words in a collection of texts. This tool provides an interactive 3D scatter plot where each point represents a word, and the axes correspond to different properties of the words.
 
 ## Demo
 Explore the tool in action at [textvisualization.app](https://textvisualization.app).
 
 ## Dependencies
-- [Plotly JS](https://cdn.plot.ly/plotly-latest.min.js): Ensure you load Plotly JS for the script to work correctly.
-- [Corpus_utils](https://github.com/roverbird/corpus_utils): This tool relies on a text mining dataset in tab-separated format prepared by corpus_utils. Make sure to check out corpus_utils for extracting keywords from a vast collection of texts.
+- [Plotly JS](https://plotly.com/javascript/): Ensure you load Plotly JS for the script to work correctly.
+- [Corpus_utils](https://github.com/roverbird/corpus_utils): This tool relies on a text mining dataset in tab-separated format prepared by corpus_utils. Make sure to check out corpus_utils for a new statistical method of extracting keywords from a vast collection of texts.
 
 ## Usage
 1. Clone the repository.
@@ -69,7 +69,7 @@ Explanation of the columns:
 
 ## index.html Overview
 
-The `index.html` file serves as the entry point for the Semascope Online Text Visualization App. This HTML file integrates the necessary styles, scripts, and components to create an interactive and visually engaging environment for exploring textual data.
+The `index.html` file serves as the entry point for the [Semascope 👁️ Online Text Visualization App](https://textvisualization.app/). This HTML file integrates the necessary styles, scripts, and components to create an interactive and visually engaging environment for exploring textual data.
 
 Key Features:
 
