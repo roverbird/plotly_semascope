@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semascope Text Visualization</title>
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+    <style>
+        .zoomable {
+            overflow: hidden;
+            touch-action: pan-y pinch-zoom;
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        #plot {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero is-info is-medium is-bold">
+        <!-- Navigation Bar - Omitted for simplicity -->
+    </section>
+
+    <section class="container">
+        <div class="is-hidden" id="dataUrl">/dataset/NBD1597.tab</div>
+        <br>
+
+        <!-- Buttons for filtering data - Omitted for simplicity -->
+
+        <div class="columns is-centered">
+            <div class="column is-8">
+                <progress id="loadingProgress" class="progress is-primary" max="100">25%</progress>
+            </div>
+        </div>
+
+        <script>
+            // Loading simulation script - Omitted for simplicity
+        </script>
+
+        <div class="is-flex zoomable">
+            <div id="plot"></div>
+        </div>
+
+        <br><br>
+
+        <!-- Search Form - Omitted for simplicity -->
+
+        <br><br>
+
+        <!-- Filter Form - Omitted for simplicity -->
+    </section>
+
+    <br><br>
+
+    <section class="container">
+        <div class="intro column is-8 is-offset-2">
+            <h3 class="title"> Andersen's Fairy Tales by Hans Christian Andersen</h3><br>
+            <p>Help:</p>
+            <p class="subtitle">Each dot is a word. Rotate the plot, controls appear on top right corner. Press Heroes and then Background, and then Background again. Press Reduce to see less common words by reducing DF. Use Search to look for part or whole word. Use Filters Control to filter words. Press All to load all data. Reload the page to hard reset.</p>
+            <p class="subtitle">DF is Document Frequency. Parameters <i>k</i> and <i>p</i> are decimals. Use Cluster field to enter cluster number.</p>
+            <p class="subtitle">Words are clustered automatically, based on their estimated distribution parameters. Detailed help is <a href="/blog/help/">here</a>.</p>
+            <p><a href="/dataset/NBD1597.tab" class="button is-small is-dark">Download dataset</a>
+            <a href="/dataset/pg1597_output.txt" class="button is-small is-light">Download text</a></p>
+        </div>
+    </section>
+
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="plot.js"></script>
+
+    <footer class="footer is-fixed-bottom is-fullwidth">
+        <!-- Footer Section - Omitted for simplicity -->
+    </footer>
+
+    <script type="text/javascript">
+        // Script for handling mobile navigation - Omitted for simplicity
+    </script>
+</body>
+</html>
+

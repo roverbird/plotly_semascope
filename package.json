@@ -1,0 +1,13 @@
+{
+  "name": "semascope-text-visualization",
+  "version": "1.0.0",
+  "description": "Text visualization tool using Plotly JS",
+  "main": "plot.js",
+  "scripts": {
+    "start": "node plot.js"
+  },
+  "dependencies": {
+    "plotly": "^1.58.4"
+  }
+}
+
